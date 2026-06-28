@@ -1,4 +1,5 @@
 import { supabase } from '@/lib/supabase'
+import Image from 'next/image'
 
 type Props = {
   params: Promise<{
@@ -69,13 +70,15 @@ export default async function SharedRoutinePage({
         
         {/* Hero Section */}
         <div className="text-center mb-8">
-          <div className="relative inline-flex items-center justify-center p-3 bg-purple-100/50 rounded-2xl mb-4">
-            <svg className="w-8 h-8 text-[#9E7AEB]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" fill="currentColor" fillOpacity="0.15" />
-            </svg>
-            <svg className="w-4 h-4 text-purple-300 absolute -top-1 -right-1 animate-pulse" viewBox="0 0 24 24" fill="currentColor">
-              <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
-            </svg>
+          <div className="relative inline-flex items-center justify-center mb-4">
+            <Image
+              src="/logo.png"
+              alt="Glowa Logo"
+              width={64}
+              height={64}
+              className="rounded-2xl shadow-sm border border-purple-100/30"
+              priority
+            />
           </div>
 
           <p className="text-xs font-bold tracking-widest uppercase text-[#9E7AEB] mb-2">
