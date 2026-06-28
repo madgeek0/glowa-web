@@ -67,12 +67,12 @@ export default async function SharedRoutinePage({
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#F7F3FF] via-[#FAF6FF] to-white flex flex-col justify-between py-12 px-6 font-sans antialiased text-[#1A1820]">
       <div className="max-w-md mx-auto w-full flex flex-col flex-1">
-        
+
         {/* Hero Section */}
         <div className="text-center mb-8">
           <div className="relative inline-flex items-center justify-center mb-4">
             <Image
-              src="/logo.png"
+              src="/whiteIconSquare.png"
               alt="Glowa Logo"
               width={64}
               height={64}
