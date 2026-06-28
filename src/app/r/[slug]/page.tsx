@@ -21,7 +21,7 @@ export default async function SharedRoutinePage({
 }: Props) {
   const { slug } = await params
 
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from('shared_routines')
     .select('*')
     .eq('share_slug', slug)
