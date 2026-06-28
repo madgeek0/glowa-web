@@ -74,7 +74,7 @@ export default async function SharedRoutinePage({
             <Image
               src="/whiteIconSquare.png"
               alt="Glowa Logo"
-              width={64}
+              width={4}
               height={64}
               className="rounded-2xl"
               priority
@@ -85,7 +85,7 @@ export default async function SharedRoutinePage({
             Shared from Glowa
           </p>
 
-          <h1 className="text-3xl font-extrabold tracking-tight text-[#1A1820] max-w-sm mx-auto">
+          <h1 className="text-2xl font-extrabold tracking-tight text-[#1A1820] max-w-sm mx-auto">
             {routine.name}
           </h1>
 
