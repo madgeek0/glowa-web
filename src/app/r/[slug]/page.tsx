@@ -76,7 +76,7 @@ export default async function SharedRoutinePage({
               alt="Glowa Logo"
               width={64}
               height={64}
-              className="rounded-2xl shadow-sm border border-purple-100/30"
+              className="rounded-2xl"
               priority
             />
           </div>
