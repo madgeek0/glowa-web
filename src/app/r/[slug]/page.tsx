@@ -6,6 +6,16 @@ type Props = {
   }>
 }
 
+interface RoutineStep {
+  title: string
+}
+
+interface Routine {
+  name: string
+  category: string
+  steps: RoutineStep[]
+}
+
 export default async function SharedRoutinePage({
   params,
 }: Props) {
@@ -25,7 +35,7 @@ export default async function SharedRoutinePage({
     )
   }
 
-  const routine = data.routine_payload
+  const routine = data.routine_payload as Routine
 
   return (
     <main
@@ -42,7 +52,7 @@ export default async function SharedRoutinePage({
 
       <ul>
         {routine.steps.map(
-          (step: any, index: number) => (
+          (step: RoutineStep, index: number) => (
             <li key={index}>
               {step.title}
             </li>
