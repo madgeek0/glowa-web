@@ -74,7 +74,7 @@ export default async function SharedRoutinePage({
             <Image
               src="/whiteIconSquare.png"
               alt="Glowa Logo"
-              width={4}
+              width={64}
               height={64}
               className="rounded-2xl"
               priority
