@@ -27,10 +27,20 @@ export default async function SharedRoutinePage({
     .eq('share_slug', slug)
     .single()
 
+  if (error) {
+    return (
+      <main style={{ padding: 32 }}>
+        <h1>Error</h1>
+        <pre>{JSON.stringify(error, null, 2)}</pre>
+      </main>
+    )
+  }
+
   if (!data) {
     return (
       <main style={{ padding: 32 }}>
         <h1>Routine not found</h1>
+        <p>Slug: {slug}</p>
       </main>
     )
   }
